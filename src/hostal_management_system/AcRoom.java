@@ -10,12 +10,11 @@ package hostal_management_system;
  * @author Lahiru Dananjaya
  */
 public class AcRoom extends Room{
-    private float price;
+    private final float price=20000;
 
-    public AcRoom(int roomId,String floor) {
-        super(roomId,floor);
-        this.price = 20000;
-      
+    public AcRoom(int roomId, String floor) {
+        super(roomId, floor);
     }
+
     
 }

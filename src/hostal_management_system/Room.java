@@ -13,6 +13,7 @@ public class Room {
     private int roomId;
     private String floor;
     private boolean availability;
+    private int ownerId;
 
     
     
@@ -23,6 +24,7 @@ public class Room {
     public Room(int roomId, String floor) {
         this.roomId = roomId;
         this.floor = floor;
+        availability=false;
     }
     
 

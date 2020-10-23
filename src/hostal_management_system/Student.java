@@ -13,6 +13,9 @@ public class Student {
     private int moneyPaid;
     
     
+    
+    
+    //set system date time for check in/out status
     public String checkIn(){
            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
            LocalDateTime now = LocalDateTime.now();  
