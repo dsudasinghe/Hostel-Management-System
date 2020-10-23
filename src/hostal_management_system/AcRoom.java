@@ -15,7 +15,7 @@ public class AcRoom extends Room{
     public AcRoom(int roomId,String floor) {
         super(roomId,floor);
         this.price = 20000;
-        super.se
+      
     }
     
 }

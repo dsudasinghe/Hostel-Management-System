@@ -21,6 +21,8 @@ public class Hostal_management_system {
         
         System.out.println(s1.getMoneyPaid());
         System.out.println(s1.toString());
+        System.out.println(s1.checkIn());
+        System.out.println(s1.checkOut());
     }
     
 }

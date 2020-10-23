@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package hostal_management_system;
-
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime; 
 /**
  *
  * @author Lahiru Dananjaya
@@ -15,6 +11,19 @@ public class Student {
     private int tel;
     private String faculty;
     private int moneyPaid;
+    
+    
+    public String checkIn(){
+           DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+           LocalDateTime now = LocalDateTime.now();  
+           return dtf.format(now);
+    }
+    
+    public String checkOut(){
+           DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+           LocalDateTime now = LocalDateTime.now();  
+           return dtf.format(now);
+    }
 
    
 
