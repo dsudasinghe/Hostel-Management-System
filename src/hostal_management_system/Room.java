@@ -13,7 +13,7 @@ public class Room {
     private int roomId;
     private String floor;
     private boolean availability;
-    private float price;
+    private int ownerId;
 
     
     
@@ -24,9 +24,15 @@ public class Room {
     public Room(int roomId, String floor) {
         this.roomId = roomId;
         this.floor = floor;
+        availability=false;
+        ownerId=0;
     }
     
 
+    public void reserveRoom(int ownerId){
+        availability=true;
+        this.ownerId=ownerId;
+    }
    
        
     
@@ -50,11 +56,23 @@ public class Room {
     public void setFloor(String floor) {
         this.floor = floor;
     }
-    public float getPrice(){
-        return price;
+
+
+    public boolean isAvailability() {
+        return availability;
     }
-    public void setPrice(float price){
-        this.price=price;
+
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+
     }
     
 }
