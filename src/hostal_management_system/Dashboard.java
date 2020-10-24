@@ -233,7 +233,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(40, 249, Short.MAX_VALUE))
+                .addGap(36, 249, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -269,7 +269,6 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btnStRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStRegActionPerformed
         new StudentRegForm().setVisible(true);
-        
     }//GEN-LAST:event_btnStRegActionPerformed
 
     /**
