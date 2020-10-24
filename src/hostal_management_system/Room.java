@@ -25,9 +25,14 @@ public class Room {
         this.roomId = roomId;
         this.floor = floor;
         availability=false;
+        ownerId=0;
     }
     
 
+    public void reserveRoom(int ownerId){
+        availability=true;
+        this.ownerId=ownerId;
+    }
    
        
     
@@ -50,6 +55,22 @@ public class Room {
 
     public void setFloor(String floor) {
         this.floor = floor;
+    }
+
+    public boolean isAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
     }
     
 }
