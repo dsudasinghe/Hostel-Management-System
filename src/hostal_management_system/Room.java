@@ -57,7 +57,6 @@ public class Room {
         this.floor = floor;
     }
 
-
     public boolean isAvailability() {
         return availability;
     }
@@ -72,7 +71,6 @@ public class Room {
 
     public void setOwnerId(int ownerId) {
         this.ownerId = ownerId;
-
     }
     
 }
