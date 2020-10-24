@@ -13,6 +13,7 @@ public class Room {
     private int roomId;
     private String floor;
     private boolean availability;
+    private float price;
 
     
     
@@ -48,6 +49,12 @@ public class Room {
 
     public void setFloor(String floor) {
         this.floor = floor;
+    }
+    public float getPrice(){
+        return price;
+    }
+    public void setPrice(float price){
+        this.price=price;
     }
     
 }
