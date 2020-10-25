@@ -169,15 +169,15 @@ public class OrderFood extends javax.swing.JFrame {
     {
         b=1;
     }
-    else if(lbllunch.isSelected()==true)
+    if(lbllunch.isSelected()==true)
     {
         l=1;
     }
-    else if(lbldinner.isSelected()==true)
+    if(lbldinner.isSelected()==true)
     {
         d=1;
     }
-    else if(lblmilk.isSelected()==true)
+    if(lblmilk.isSelected()==true)
     {
         m=1;
     }
@@ -190,17 +190,16 @@ public class OrderFood extends javax.swing.JFrame {
     
     
     try {
+            
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
             
-            String query ="SELECT moneyPaid FROM student WHERE id="+id+";";
+            String query ="SELECT moneyPaid FROM student WHERE id="+id+";"; 
             
             //create the java statement
             Statement st = conn.createStatement();
-      
             // execute the query, and get a java result set
             ResultSet rs = st.executeQuery(query);
-      
       
        while (rs.next())
       {
@@ -218,12 +217,27 @@ public class OrderFood extends javax.swing.JFrame {
            System.err.println(e.getMessage());
        }
     
-    
-    
-   System.out.format("%s %s\n", bal,id);
-    
+     
+   int idint=Integer.parseInt(id); 
    
    
+   
+   Order obj= new Order(bal,idint,b,l,d,m);
+   int tot=obj.getTotal();
+   
+   
+   
+   
+   
+   
+   
+   System.out.format("%s %s %s %s %s %s %s\n", bal,id,b,l,d,m,tot);
+   
+   
+   
+   
+   b=0;l=0;d=0;m=0;
+  
    
    
     
