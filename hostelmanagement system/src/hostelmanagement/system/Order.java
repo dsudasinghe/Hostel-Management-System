@@ -9,20 +9,33 @@ package hostelmanagement.system;
  *
  * @author lw
  */
+
+import java.sql.*;
+
+
 public class Order {
     
-    float total;
-    float accountbalance;
-    float food1;
-    float foood2;
-    float foood3;
+    int total;
+    int accountbalance;
+    int brakfast;
+    int lunch;
+    int dinner;
+    int milk;
+    int   studentid;
     
  
-    public Order(double total,double accountbalance,double foood1,double foood2,double foood3){
-        total=0;
-        accountbalance=0;
-        food1=1;
+    public Order(int studentid,int accountbalance,int isbreak,int islunch,int isdinner,int ismilk){
         
+        
+        this.studentid=studentid;
+        this.accountbalance=accountbalance;
+        
+        
+        
+     
+        total=(brakfast*isbreak)+(lunch*islunch)+(dinner*isdinner)+(milk*ismilk);
+        accountbalance=0;
+         
         
     }
     
@@ -37,4 +50,12 @@ public class Order {
     
     
     
+    
+    
+    
+    
+    
+    
 }
+    
+    

@@ -4,10 +4,8 @@
  * and open the template in the editor.
  */
 
-package hostelmanagement.system;
+package hostal_management_system;
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 /**
  *
  * @author lw
@@ -16,8 +14,8 @@ public class OrderFood extends javax.swing.JFrame {
 
     
     
-    int b,l,d,m;
-    String studentno;
+    int b=0,l=0,d=0,m=0;
+    String id;
     int bal;
     
     
@@ -186,7 +184,7 @@ public class OrderFood extends javax.swing.JFrame {
     
     
     
-    studentno=txtstdentid.getText();
+    id=txtstdentid.getText();
     
     
     
@@ -195,16 +193,13 @@ public class OrderFood extends javax.swing.JFrame {
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
             
-            String query ="SELECT moneyPaid FROM students WHERE id=studentno;";
-            
-            
-            
+            String query ="SELECT moneyPaid FROM student WHERE id="+id+";";
             
             //create the java statement
-          Statement st = conn.createStatement();
+            Statement st = conn.createStatement();
       
-      // execute the query, and get a java result set
-           ResultSet rs = st.executeQuery(query);
+            // execute the query, and get a java result set
+            ResultSet rs = st.executeQuery(query);
       
       
        while (rs.next())
@@ -225,8 +220,12 @@ public class OrderFood extends javax.swing.JFrame {
     
     
     
+   System.out.format("%s %s\n", bal,id);
     
-    
+   
+   
+   
+   
     
     
     
@@ -290,15 +289,6 @@ public class OrderFood extends javax.swing.JFrame {
 
 
 
-
-
-
-
-
-
-
-
-
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -336,6 +326,7 @@ public class OrderFood extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(OrderFood.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
