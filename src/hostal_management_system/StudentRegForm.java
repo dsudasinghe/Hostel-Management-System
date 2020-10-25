@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package hostal_management_system;
+import java.sql.*;
 
 import com.sun.jdi.connect.spi.Connection;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -167,11 +169,30 @@ public class StudentRegForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
-        // TODO add your handling code here:
+        try {
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+            
+            String query ="INSERT INTO `student`(`id`, `name`, `tel`, `faculty`)"+" VALUES (?,?,?,?)";
+            
+            PreparedStatement pst = conn.prepareStatement(query); 
+            pst.setInt(1,Integer.parseInt(txtSId.getText()));
+            pst.setString(2, txtSName.getText());
+            pst.setInt(3, Integer.parseInt(txtSTel.getText()));
+            pst.setString(4,cmbFaculty.getSelectedItem().toString());
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "Register Succesfull");
+            
+        }
+        catch(Exception e){
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
+        
     }//GEN-LAST:event_btnRegActionPerformed
 
     private void txtSTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSTelActionPerformed
-        int tell = Integer.parseInt(txtSTel.getText());
+        
     }//GEN-LAST:event_txtSTelActionPerformed
 
     private void btnReg1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReg1ActionPerformed
