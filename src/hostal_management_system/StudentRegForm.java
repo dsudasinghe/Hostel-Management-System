@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package hostal_management_system;
+import java.sql.*;
 
 import com.sun.jdi.connect.spi.Connection;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -42,7 +44,8 @@ public class StudentRegForm extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         btnReg = new javax.swing.JButton();
         cmbFaculty = new javax.swing.JComboBox<>();
-        btnReg1 = new javax.swing.JButton();
+        btnClose = new javax.swing.JButton();
+        btnClear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,11 +86,19 @@ public class StudentRegForm extends javax.swing.JFrame {
         cmbFaculty.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
         cmbFaculty.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SOC", "SOB", "SOE" }));
 
-        btnReg1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        btnReg1.setText("Close");
-        btnReg1.addActionListener(new java.awt.event.ActionListener() {
+        btnClose.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnClose.setText("Close");
+        btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReg1ActionPerformed(evt);
+                btnCloseActionPerformed(evt);
+            }
+        });
+
+        btnClear.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnClear.setText("Clear");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
             }
         });
 
@@ -103,10 +114,6 @@ public class StudentRegForm extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(62, 62, 62)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(33, 33, 33)
-                                .addComponent(txtSName, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
@@ -114,15 +121,21 @@ public class StudentRegForm extends javax.swing.JFrame {
                                     .addComponent(jLabel5))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(btnReg)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnReg1)
-                                        .addGap(13, 13, 13))
-                                    .addComponent(txtSId, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
-                                    .addComponent(txtSTel, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
-                                    .addComponent(cmbFaculty, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap(230, Short.MAX_VALUE))
+                                    .addComponent(txtSId)
+                                    .addComponent(txtSTel)
+                                    .addComponent(cmbFaculty, 0, 179, Short.MAX_VALUE)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(33, 33, 33)
+                                .addComponent(txtSName, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(btnReg)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(13, 13, 13)))))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,18 +158,21 @@ public class StudentRegForm extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(cmbFaculty, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                .addGap(35, 35, 35)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnReg)
-                    .addComponent(btnReg1))
-                .addContainerGap(70, Short.MAX_VALUE))
+                    .addComponent(btnClear)
+                    .addComponent(btnClose))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,16 +183,42 @@ public class StudentRegForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
-        // TODO add your handling code here:
+        try {
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+            
+            String query ="INSERT INTO `student`(`id`, `name`, `tel`, `faculty`)"+" VALUES (?,?,?,?)";
+            
+            PreparedStatement pst = conn.prepareStatement(query); 
+            pst.setInt(1,Integer.parseInt(txtSId.getText()));
+            pst.setString(2, txtSName.getText());
+            pst.setInt(3, Integer.parseInt(txtSTel.getText()));
+            pst.setString(4,cmbFaculty.getSelectedItem().toString());
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "Register Succesfull");
+            
+        }
+        catch(Exception e){
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
+        
     }//GEN-LAST:event_btnRegActionPerformed
 
     private void txtSTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSTelActionPerformed
-        int tell = Integer.parseInt(txtSTel.getText());
+        
     }//GEN-LAST:event_txtSTelActionPerformed
 
-    private void btnReg1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReg1ActionPerformed
+    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
         this.setVisible(false);
-    }//GEN-LAST:event_btnReg1ActionPerformed
+    }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        txtSName.setText("");
+        txtSId.setText("");
+        txtSTel.setText("");
+        
+    }//GEN-LAST:event_btnClearActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,8 +256,9 @@ public class StudentRegForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnClose;
     private javax.swing.JButton btnReg;
-    private javax.swing.JButton btnReg1;
     private javax.swing.JComboBox<String> cmbFaculty;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
