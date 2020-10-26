@@ -143,31 +143,6 @@ int b,l,d,m;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -38,6 +38,11 @@ public class Order {
     public int getAccountbalance() {
         return accountbalance;
     }
+    
+    public int getnewAccountbalance(){
+    
+        return accountbalance-total;
+    }
 
     /**
      * @param accountbalance the accountbalance to set
