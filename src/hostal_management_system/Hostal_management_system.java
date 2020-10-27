@@ -17,7 +17,6 @@ public class Hostal_management_system {
     public static void main(String[] args) {
         Student s1 = new Student(1,"lahiru",923,"foc");
         s1.payMoney(10000);
-        s1.oderFood(100);
         
         System.out.println(s1.getMoneyPaid());
         System.out.println(s1.toString());
@@ -25,6 +24,8 @@ public class Hostal_management_system {
         System.out.println(s1.checkOut());
         
         new Dashboard().setVisible(true);
+        
+        
     }
     
 }
