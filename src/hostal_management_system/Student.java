@@ -35,16 +35,17 @@ public class Student {
     public void payMoney(int payMoney){
         moneyPaid+=payMoney;
     }
+
+   
     
-    //when the student oders food foodPrice will be subcracted from the moneyPaid
-    public void oderFood(int foodPrice){
-        moneyPaid-=foodPrice;
+    //defualt constructor
+    public Student() {
     }
+   
     
     
     
-    
-    
+   
     //constructor for student class
     public Student(int StudentId, String name, int tel,String faculty) {
         this.faculty=faculty;
