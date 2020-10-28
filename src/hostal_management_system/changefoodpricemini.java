@@ -139,8 +139,8 @@ int b,l,d,m;
    d= Integer.parseInt(txtcdinner.getText());
    m= Integer.parseInt(txtcmilk.getText());
    
-   
 
+   
 
 
         // TODO add your handling code here:
