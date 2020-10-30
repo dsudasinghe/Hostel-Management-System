@@ -33,6 +33,7 @@ public class OrderFood extends javax.swing.JFrame {
      */
     public OrderFood() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
