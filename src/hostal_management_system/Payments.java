@@ -153,7 +153,7 @@ public class Payments extends javax.swing.JFrame {
         
 
         int studentId=Integer.parseInt(txtpstudentid.getText());
-        int pamount=Integer.parseInt(txtpamount.getText());
+        int payment=Integer.parseInt(txtpamount.getText());
 
        
 
@@ -166,8 +166,8 @@ public class Payments extends javax.swing.JFrame {
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
             
             
-            String query1 ="update student set moneyPaid = (moneyPaid+"+pamount+") where id = "+studentId+""; 
-            String query2 ="INSERT INTO paymenthistory (studentid,amount) VALUES ("+studentId+","+pamount+")";
+            String query1 ="update student set moneyPaid = (moneyPaid+"+payment+") where id = "+studentId+""; 
+            String query2 ="INSERT INTO paymenthistory (studentid,amount) VALUES ("+studentId+","+payment+")";
             // execute the query, and get a java result set
             try ( //create the java statement
                     Statement st = conn.createStatement()) {
