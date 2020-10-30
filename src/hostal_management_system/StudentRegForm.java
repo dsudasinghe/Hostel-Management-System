@@ -22,6 +22,7 @@ public class StudentRegForm extends javax.swing.JFrame {
      */
     public StudentRegForm() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -182,6 +183,9 @@ public class StudentRegForm extends javax.swing.JFrame {
             pst.setString(4,cmbFaculty.getSelectedItem().toString());
             pst.execute();
             JOptionPane.showMessageDialog(null, "Register Succesfull");
+            txtSName.setText("");
+            txtSId.setText("");
+            txtSTel.setText("");
             
         }
         catch(Exception e){

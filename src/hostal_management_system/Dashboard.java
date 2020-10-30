@@ -16,6 +16,7 @@ public class Dashboard extends javax.swing.JFrame {
      */
     public Dashboard() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -49,6 +50,8 @@ public class Dashboard extends javax.swing.JFrame {
         btnUser = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setFocusCycleRoot(true);
 
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 20)); // NOI18N
         jLabel1.setText("Dashboard");
