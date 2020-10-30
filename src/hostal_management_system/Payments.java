@@ -7,6 +7,7 @@ package hostal_management_system;
 
 import java.awt.HeadlessException;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
@@ -17,6 +18,9 @@ import javax.swing.JOptionPane;
  */
 public class Payments extends javax.swing.JFrame {
 
+    
+    int bal,newbalance;
+    
     /**
      * Creates new form Payments
      */
@@ -135,15 +139,25 @@ public class Payments extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         int studentId=Integer.parseInt(txtpstudentid.getText());
         int pamount=Integer.parseInt(txtpamount.getText());
 
-        
+       
 
-        
-        Student ca=new Student(studentId,pamount);
-        int newbalance=ca.getMoneyPaid();
+      
         
         
         try {
@@ -151,7 +165,8 @@ public class Payments extends javax.swing.JFrame {
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
             
-            String query1 ="update student set moneyPaid = '"+newbalance+"' where id = "+studentId+""; 
+            
+            String query1 ="update student set moneyPaid = (moneyPaid+"+pamount+") where id = "+studentId+""; 
             String query2 ="INSERT INTO paymenthistory (studentid,amount) VALUES ("+studentId+","+pamount+")";
             // execute the query, and get a java result set
             try ( //create the java statement

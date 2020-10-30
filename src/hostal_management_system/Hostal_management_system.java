@@ -18,14 +18,7 @@ public class Hostal_management_system {
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
+     /*
         
         
         Student s1 = new Student(1,"lahiru",923,"foc");
@@ -36,7 +29,10 @@ public class Hostal_management_system {
         System.out.println(s1.checkIn());
         System.out.println(s1.checkOut());
         
-        new Dashboard().setVisible(true);
+
+
+    */
+        new Login().setVisible(true);
         
         
     }
