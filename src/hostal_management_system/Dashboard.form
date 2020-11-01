@@ -126,7 +126,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel2" pref="129" max="32767" attributes="0"/>
+                      <Component id="jLabel2" pref="131" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnStReg" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -176,7 +176,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel3" pref="129" max="32767" attributes="0"/>
+                      <Component id="jLabel3" pref="131" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnRes" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -226,7 +226,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel4" pref="129" max="32767" attributes="0"/>
+                      <Component id="jLabel4" pref="131" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnFood" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -276,7 +276,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel7" pref="129" max="32767" attributes="0"/>
+                      <Component id="jLabel7" pref="131" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnCheck" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -326,7 +326,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel6" pref="129" max="32767" attributes="0"/>
+                      <Component id="jLabel6" pref="131" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnPay" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -350,6 +350,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="view"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPayActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -373,7 +376,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel5" pref="129" max="32767" attributes="0"/>
+                      <Component id="jLabel5" pref="131" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnUser" min="-2" max="-2" attributes="0"/>
                   </Group>

@@ -17,8 +17,7 @@ public class Room {
 
     
     
-    
-    
+  
     
     //constructor for room class
     public Room(int roomId, String floor) {
