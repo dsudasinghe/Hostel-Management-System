@@ -13,9 +13,9 @@ public class AcRoom extends Room{
     private final float price=20000;
 
     public AcRoom(int roomId, String floor) {
-        super(roomId, floor);
+     //   super(roomId, floor);
         super.setAvailability(false);
-        super.setOwnerId(0);
+        
     }
 
     
