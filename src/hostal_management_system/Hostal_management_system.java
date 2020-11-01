@@ -15,6 +15,12 @@ public class Hostal_management_system {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        
+        
+     /*
+        
+        
         Student s1 = new Student(1,"lahiru",923,"foc");
         s1.payMoney(10000);
         
@@ -23,7 +29,10 @@ public class Hostal_management_system {
         System.out.println(s1.checkIn());
         System.out.println(s1.checkOut());
         
-        new Dashboard().setVisible(true);
+
+
+    */
+        new Login().setVisible(true);
         
         
     }
