@@ -11,65 +11,104 @@ package hostal_management_system;
  */
 public class Room {
     private int roomId;
-    private String floor;
+    private int floor;
     private boolean availability;
-    private int ownerId;
-
+    private int type;
+    private int numberOfmembers;
     
     
-  
     
-    //constructor for room class
-    public Room(int roomId, String floor) {
-        this.roomId = roomId;
-        this.floor = floor;
-        availability=false;
-        ownerId=0;
+    
+    public Room(int roomId,int type,int floor,int numberOfmembers)
+    {
+        this.roomId=roomId;
+        this.type=type;
+        this.floor=floor;
+        this.numberOfmembers=numberOfmembers;
+        if(numberOfmembers==2)
+        {
+        this.availability=false;
+        }
+        else
+        {
+            this.availability=true;
+        }
     }
     
-
-    public void reserveRoom(int ownerId){
-        availability=true;
-        this.ownerId=ownerId;
-    }
-   
-       
     
     
 
-    
-  //getters and setters for room class
-
+    /**
+     * @return the roomId
+     */
     public int getRoomId() {
         return roomId;
     }
 
+    /**
+     * @param roomId the roomId to set
+     */
     public void setRoomId(int roomId) {
         this.roomId = roomId;
     }
 
-    public String getFloor() {
+    /**
+     * @return the floor
+     */
+    public int getFloor() {
         return floor;
     }
 
-    public void setFloor(String floor) {
+    /**
+     * @param floor the floor to set
+     */
+    public void setFloor(int floor) {
         this.floor = floor;
     }
 
+    /**
+     * @return the availability
+     */
     public boolean isAvailability() {
         return availability;
     }
 
+    /**
+     * @param availability the availability to set
+     */
     public void setAvailability(boolean availability) {
         this.availability = availability;
     }
 
-    public int getOwnerId() {
-        return ownerId;
+    /**
+     * @return the type
+     */
+    public int isType() {
+        return type;
     }
 
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
+    /**
+     * @param type the type to set
+     */
+    public void setType(int type) {
+        this.type = type;
     }
+
+    /**
+     * @return the numberOfmembers
+     */
+    public int getNumberOfmembers() {
+        return numberOfmembers;
+    }
+
+    /**
+     * @param numberOfmembers the numberOfmembers to set
+     */
+    public void setNumberOfmembers(int numberOfmembers) {
+        this.numberOfmembers = numberOfmembers;
+    }
+    
+    
+  
     
 }
