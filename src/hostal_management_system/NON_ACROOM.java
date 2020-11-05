@@ -12,6 +12,9 @@ package hostal_management_system;
 public class NON_ACROOM extends Room{
     private float price;
 
+ 
+    
+    
     public NON_ACROOM(int roomId, String floor,float price) {
         super(roomId, floor);
         this.price=price;
