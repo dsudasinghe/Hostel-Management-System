@@ -172,7 +172,40 @@ public class getpay {
  
  
  
- 
+ public int checkpaidOrnot(int studentid1)
+ {
+      
+    try {
+            
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+            
+            String query ="SELECT paidOrNot FROM student WHERE id="+studentid1+";"; 
+            
+            
+        // execute the query, and get a java result set
+        try ( //create the java statement
+                Statement st = conn.createStatement()) {
+            // execute the query, and get a java result set
+            ResultSet rs = st.executeQuery(query);
+            
+            while (rs.next())
+            {
+                int paidOrNot = rs.getInt("paidOrNot");
+                
+                return paidOrNot;
+            }
+        }
+        }
+       catch (SQLException e)
+        {
+           System.err.println("Got an exception! ");
+           System.err.println(e.getMessage());
+       }
+     return 0;
+    
+
+ }
  
  
  
