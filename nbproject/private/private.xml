@@ -4,8 +4,21 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/AcRoom.java</file>
-            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/getpayments.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Payments.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/addroom.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/StudentRegForm.java</file>
             <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/NON_ACROOM.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Login.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Room.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Student.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Passing.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Order.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Hostal_management_system.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/AdminReg.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/Roomreservation.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/OrderFood.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/roompayments.java</file>
+            <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/changefoodpricemini.java</file>
             <file>file:/C:/Users/lw/Desktop/Javagit/Hostel-Management-System/src/hostal_management_system/getpay.java</file>
         </group>
     </open-files>
