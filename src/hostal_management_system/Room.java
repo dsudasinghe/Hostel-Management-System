@@ -10,25 +10,14 @@ package hostal_management_system;
  * @author Lahiru Dananjaya
  */
 public class Room {
+
+    
     private int roomId;
     private int floor;
     private boolean availability;
     private int type;
     private int numberOfmembers;
     private int priceOfRoom;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -124,6 +113,19 @@ public class Room {
     }
     
     
+    /**
+     * @return the priceOfRoom
+     */
+    public int getPriceOfRoom() {
+        return priceOfRoom;
+    }
+
+    /**
+     * @param priceOfRoom the priceOfRoom to set
+     */
+    public void setPriceOfRoom(int priceOfRoom) {
+        this.priceOfRoom = priceOfRoom;
+    }
   
     
 }

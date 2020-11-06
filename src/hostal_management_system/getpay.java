@@ -65,6 +65,7 @@ public class getpay {
                         // execute the query, and get a java result set
                         st.execute(query1);
                         st.execute(query2);
+                        st.close();
                     }
            }
        catch (SQLException e)
@@ -113,6 +114,7 @@ public class getpay {
                   System.out.format("type is %s\n", typeofroom);
                   return typeofroom;
               }
+              st.close();
           }
 
 
@@ -126,6 +128,7 @@ public class getpay {
      
      System.out.println("d");
      return 3;
+     
      
 
  }
@@ -157,6 +160,8 @@ public class getpay {
                 
                 return bal;
             }
+            
+            st.close();
         }
         }
        catch (SQLException e)
@@ -194,7 +199,11 @@ public class getpay {
                 int paidOrNot = rs.getInt("paidOrNot");
                 
                 return paidOrNot;
+                
             }
+            
+            st.close();
+            
         }
         }
        catch (SQLException e)
@@ -236,6 +245,10 @@ public class getpay {
                 
                 return price;
             }
+            
+            
+            st.close();
+            
         }
         }
        catch (SQLException e)
@@ -272,7 +285,13 @@ public class getpay {
                         st.execute(query2);
                         st.execute(query3);
                         st.execute(query4);
+                        
+                        st.close();
                     }
+                    
+                    
+                    
+                   
            }
        catch (SQLException e)
            {
@@ -282,11 +301,7 @@ public class getpay {
     
     }
 
-    void changefoodprice(int b, int l, int d, getpay m) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
- 
+    
  
  
  

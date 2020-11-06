@@ -7,15 +7,5 @@ package hostal_management_system;
 
 /**
  *
- * @author Lahiru Dananjaya
+ * @author lw
  */
-public class AcRoom extends Room{
-    
-    private int priceOfRoom;
-
-    
-}
-
-
-
-

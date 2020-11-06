@@ -17,7 +17,8 @@ public class changefoodpricemini extends javax.swing.JFrame {
     public changefoodpricemini() {
         initComponents();
     }
-int b,l,d,m;
+    
+              int b,l,d,m;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
