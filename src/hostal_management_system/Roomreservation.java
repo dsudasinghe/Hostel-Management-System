@@ -266,7 +266,7 @@ public class Roomreservation extends javax.swing.JFrame {
            
   
             String tbData[]={room_number,floor,type,availability};
-            DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
+            DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();tblModel.setRowCount(0);
             tblModel.addRow(tbData);
           
    

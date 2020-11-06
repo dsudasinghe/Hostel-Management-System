@@ -18,21 +18,8 @@ public class Hostal_management_system {
     
     
     
-    public void paymothlyrent(){
-    
-    
-    
-    
-    
-    
-    }
     
  
-    
-    
-    
-    
-    
     
  
     
