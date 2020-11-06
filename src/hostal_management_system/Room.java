@@ -15,6 +15,21 @@ public class Room {
     private boolean availability;
     private int type;
     private int numberOfmembers;
+    private int priceOfRoom;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

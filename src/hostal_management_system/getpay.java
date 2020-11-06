@@ -209,6 +209,101 @@ public class getpay {
  
  
  
+  
+ public int getitemprice(int itemname1)
+ {
+     
+     
+     //String a1=itemname1;
+      
+    try {
+            
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+            
+            String query ="SELECT price FROM pricelist WHERE itemname="+itemname1+" "; 
+            
+            
+        // execute the query, and get a java result set
+        try ( //create the java statement
+                Statement st = conn.createStatement()) {
+            // execute the query, and get a java result set
+            ResultSet rs = st.executeQuery(query);
+            
+            while (rs.next())
+            {
+                int price = rs.getInt("price");
+                
+                return price;
+            }
+        }
+        }
+       catch (SQLException e)
+        {
+           System.err.println("Got an exception! ");
+           System.err.println(e.getMessage());
+       }
+     return 0;
+    
+
+ }
+ 
+ 
+ 
+       
+ public void changefoodprice(int breakfast,int lunch,int dinner,int milk)
+{
+    
+   
+       try {
+            
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+           
+            String query1 ="update pricelist set price ="+breakfast+" where itemname = 001; ";
+            String query2 ="update pricelist set price ="+lunch+" where itemname = 003; ";
+            String query3 ="update pricelist set price ="+dinner+" where itemname = 004; ";
+            String query4 ="update pricelist set price ="+milk+" where itemname = 005; ";
+                    // execute the query, and get a java result set
+                    try ( //create the java statement
+                            Statement st = conn.createStatement()) {
+                        // execute the query, and get a java result set
+                        st.execute(query1);
+                        st.execute(query2);
+                        st.execute(query3);
+                        st.execute(query4);
+                    }
+           }
+       catch (SQLException e)
+           {
+           System.err.println("Got an exception! ");
+           System.err.println(e.getMessage());
+           }
+    
+    }
+
+    void changefoodprice(int b, int l, int d, getpay m) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

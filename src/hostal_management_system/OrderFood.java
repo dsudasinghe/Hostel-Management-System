@@ -285,8 +285,26 @@ public class OrderFood extends javax.swing.JFrame {
    int idint=Integer.parseInt(id); 
    
    
+        getpay n= new getpay();
+        int breakfastprice =n.getitemprice(001);
+        int lunchprice =n.getitemprice(003);
+        int dinnerprice =n.getitemprice(004);
+        int milkprice =n.getitemprice(005);
+        
    
-   Order obj= new Order(idint,bal,b,l,d,m);
+   
+   
+   
+   
+   
+   
+  
+   
+   Order obj= new Order(idint,bal,b,l,d,m,breakfastprice,lunchprice,dinnerprice,milkprice);
+  /* obj.setBrakfast(breakfastprice);
+   obj.setDinner(dinnerprice);
+   obj.setDinner(lunchprice);
+   obj.setMilk(milkprice);*/
    int tot=obj.getTotal();
    int newbal=obj.getnewAccountbalance();
    
@@ -297,7 +315,7 @@ public class OrderFood extends javax.swing.JFrame {
    
    
    // System.out.format("%s %s %s %s %s %s %s %s\n", bal,id,b,l,d,m,tot,newbal);//test
-        System.out.println(Currentdate);
+    System.out.println(Currentdate);
    
     newww=newbal;
     tott=tot;

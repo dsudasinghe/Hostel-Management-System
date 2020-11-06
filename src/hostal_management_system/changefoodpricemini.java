@@ -134,15 +134,27 @@ int b,l,d,m;
 
 
 
-   b= Integer.parseInt(txtcbreakfast.getText());
-   l= Integer.parseInt(txtclunch.getText());
-   d= Integer.parseInt(txtcdinner.getText());
-   m= Integer.parseInt(txtcmilk.getText());
+    b= Integer.parseInt(txtcbreakfast.getText());
+    l= Integer.parseInt(txtclunch.getText());
+    d= Integer.parseInt(txtcdinner.getText());
+    m= Integer.parseInt(txtcmilk.getText());
    
 
 
 
 
+   getpay x=new getpay();
+   x.changefoodprice(b, l, d, m);
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 

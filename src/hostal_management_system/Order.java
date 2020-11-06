@@ -13,19 +13,22 @@ public class Order {
     
     //int studentid;
     private int accountbalance;
-    private int brakfast=100;
-    private  int lunch=150;
-    private int dinner=200;
-    private int milk=50;
+    private int brakfast;
+    private  int lunch;
+    private int dinner;
+    private int milk;
     private int total;
     private int studentid;
    
   
     
- 
-    public Order(int studentid,int accountbalance,int isbreak,int islunch,int isdinner,int ismilk){
-        
-        
+ //public Order(int studentid,int accountbalance,int isbreak,int islunch,int isdinner,int ismilk,int brakfast,int lunch,int dinner,int milk)
+   // public Order(int studentid,int accountbalance,int isbreak,int islunch,int isdinner,int ismilk){
+        public Order(int studentid,int accountbalance,int isbreak,int islunch,int isdinner,int ismilk,int brakfast,int lunch,int dinner,int milk){
+      /*  this.brakfast=brakfast;
+        this.dinner=dinner;
+        this.lunch=lunch;
+        this.milk=milk;*/
         this.studentid=studentid;
         this.accountbalance=accountbalance;
         this.total=(brakfast*isbreak)+(lunch*islunch)+(dinner*isdinner)+(milk*ismilk);
