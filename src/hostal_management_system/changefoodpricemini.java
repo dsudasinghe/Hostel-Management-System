@@ -12,7 +12,7 @@ package hostal_management_system;
 public class changefoodpricemini extends javax.swing.JFrame {
 
     /**
-     * Creates new form changefoodpricemini
+     * 
      */
     public changefoodpricemini() {
         initComponents();
@@ -140,7 +140,7 @@ int b,l,d,m;
    m= Integer.parseInt(txtcmilk.getText());
    
 
-   
+
 
 
         // TODO add your handling code here:

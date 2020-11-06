@@ -45,6 +45,11 @@ public class Passing extends javax.swing.JFrame {
         jLabel2.setText("Student ID :");
 
         txtSId.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        txtSId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSIdActionPerformed(evt);
+            }
+        });
 
         btnSubmit.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         btnSubmit.setText("Submit");
@@ -151,6 +156,10 @@ public class Passing extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_btnSubmitActionPerformed
+
+    private void txtSIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSIdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSIdActionPerformed
 
     /**
      * @param args the command line arguments

@@ -14,7 +14,7 @@ public class Order {
     //int studentid;
     private int accountbalance;
     private int brakfast=100;
-    private int lunch=150;
+    private  int lunch=150;
     private int dinner=200;
     private int milk=50;
     private int total;
