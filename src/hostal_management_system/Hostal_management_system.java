@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package hostal_management_system;
+
+import javax.swing.JFrame;
+
 /*
 import java.util.Date;
 import java.text.SimpleDateFormat;  
@@ -47,11 +50,14 @@ public class Hostal_management_system {
 
 
     */
-        new Login().setVisible(true);
+        //new Login().setVisible(true);
         
       
         
         
+        loading o = new loading();
+        o.setVisible(true);
+        o.checkconn();
         
         
         
