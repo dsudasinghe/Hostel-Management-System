@@ -5,6 +5,8 @@
  */
 package hostal_management_system;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Lahiru Dananjaya
@@ -217,6 +219,11 @@ public class Dashboard extends javax.swing.JFrame {
 
         btnUser.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         btnUser.setText("view");
+        btnUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUserActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -257,7 +264,7 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -292,26 +299,54 @@ public class Dashboard extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStRegActionPerformed
-        new StudentRegForm().setVisible(true);
+        
+        StudentRegForm s = new StudentRegForm();
+        s.setVisible(true);
+        s.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     }//GEN-LAST:event_btnStRegActionPerformed
 
     private void btnResActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResActionPerformed
-        
+       
+        Roomreservation r = new Roomreservation();
+        r.setVisible(true);
+        r.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+         
     }//GEN-LAST:event_btnResActionPerformed
 
     private void btnCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckActionPerformed
-        new Passing().setVisible(true);
+
+        Passing p = new Passing();
+        p.setVisible(true);
+        p.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     }//GEN-LAST:event_btnCheckActionPerformed
 
     private void btnFoodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFoodActionPerformed
-        new OrderFood().setVisible(true);
+
+        OrderFood o = new OrderFood();
+        o.setVisible(true);
+        o.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        
+        
 // TODO add your handling code here:
     }//GEN-LAST:event_btnFoodActionPerformed
 
     private void btnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayActionPerformed
         // TODO add your handling code here:
-        new Payments().setVisible(true);
+        
+        Payments p = new Payments();
+        p.setVisible(true);
+        p.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        
     }//GEN-LAST:event_btnPayActionPerformed
+
+    private void btnUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUserActionPerformed
+        // TODO add your handling code here:
+        
+        AdminReg a = new AdminReg();
+        a.setVisible(true);
+        a.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        
+    }//GEN-LAST:event_btnUserActionPerformed
 
     /**
      * @param args the command line arguments

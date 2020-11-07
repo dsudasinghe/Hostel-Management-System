@@ -50,7 +50,7 @@ public class Payments extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
-        jLabel1.setText("Payments");
+        jLabel1.setText(" recharge");
 
         txtpstudentid.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
 
