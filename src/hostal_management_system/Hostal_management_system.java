@@ -32,7 +32,7 @@ public class Hostal_management_system {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         
         
         

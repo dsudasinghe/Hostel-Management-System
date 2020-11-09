@@ -5,6 +5,7 @@
  */
 
 package hostal_management_system;
+import java.awt.Color;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import java.util.Date;
@@ -23,7 +24,7 @@ public class OrderFood extends javax.swing.JFrame {
     
     
     
-    
+
     
     
     
