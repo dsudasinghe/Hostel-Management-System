@@ -245,8 +245,14 @@ public class roompayments extends javax.swing.JFrame {
                     
                     System.out.println(y);//now we know their id and room type  so lets get mmmm price for room id
                     
+                    
+                    
+                    
                     //********payment for the room
                     int roompricee = x.getroomprice(y, 8000, 15000);
+                    
+                    
+                    
                     
                     System.out.println(roompricee);//now we know how much he need to pay for the room
                     // now we need his balace to check he can pay or not
