@@ -190,6 +190,8 @@ public class Login extends javax.swing.JFrame {
                  
                  Dashboard dash = new Dashboard();
                  dash.setVisible(true);
+                 this.setVisible(false);
+                 dispose();
                  
              } else {
                  JOptionPane.showMessageDialog(null, "Your Username and Password Not Matched");
