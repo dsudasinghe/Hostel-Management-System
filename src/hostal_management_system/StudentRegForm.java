@@ -49,10 +49,14 @@ public class StudentRegForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel2.setForeground(new java.awt.Color(44, 128, 120));
+
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 20)); // NOI18N
-        jLabel1.setText("Student registation");
+        jLabel1.setForeground(new java.awt.Color(86, 115, 152));
+        jLabel1.setText("Student registration");
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(44, 128, 120));
         jLabel2.setText("Student Name :");
 
         txtSName.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -60,6 +64,7 @@ public class StudentRegForm extends javax.swing.JFrame {
         txtSId.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(44, 128, 120));
         jLabel3.setText("Student ID :");
 
         txtSTel.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -70,12 +75,15 @@ public class StudentRegForm extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(44, 128, 120));
         jLabel4.setText("Telephone :");
 
         jLabel5.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(44, 128, 120));
         jLabel5.setText("Faculty :");
 
         btnReg.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnReg.setForeground(new java.awt.Color(44, 128, 120));
         btnReg.setText("Register");
         btnReg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,9 +92,11 @@ public class StudentRegForm extends javax.swing.JFrame {
         });
 
         cmbFaculty.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
+        cmbFaculty.setForeground(new java.awt.Color(86, 115, 152));
         cmbFaculty.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SOC", "SOB", "SOE" }));
 
         btnReg1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnReg1.setForeground(new java.awt.Color(44, 128, 120));
         btnReg1.setText("Close");
         btnReg1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,10 +111,7 @@ public class StudentRegForm extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
+                        .addGap(196, 196, 196)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -122,17 +129,20 @@ public class StudentRegForm extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(btnReg1)
                                         .addGap(13, 13, 13))
-                                    .addComponent(txtSId, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
-                                    .addComponent(txtSTel, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
-                                    .addComponent(cmbFaculty, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap(230, Short.MAX_VALUE))
+                                    .addComponent(txtSId, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtSTel, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cmbFaculty, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(268, 268, 268)
+                        .addComponent(jLabel1)))
+                .addContainerGap(222, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(104, 104, 104)
                 .addComponent(jLabel1)
-                .addGap(47, 47, 47)
+                .addGap(52, 52, 52)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtSName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -152,7 +162,7 @@ public class StudentRegForm extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnReg)
                     .addComponent(btnReg1))
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -163,7 +173,7 @@ public class StudentRegForm extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
