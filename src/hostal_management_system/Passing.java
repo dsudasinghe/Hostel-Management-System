@@ -38,10 +38,13 @@ public class Passing extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setBackground(new java.awt.Color(86, 115, 152));
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(86, 115, 152));
         jLabel1.setText("Check In/Out");
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(44, 128, 120));
         jLabel2.setText("Student ID :");
 
         txtSId.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -52,6 +55,7 @@ public class Passing extends javax.swing.JFrame {
         });
 
         btnSubmit.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        btnSubmit.setForeground(new java.awt.Color(44, 128, 120));
         btnSubmit.setText("Submit");
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,9 +64,11 @@ public class Passing extends javax.swing.JFrame {
         });
 
         cmbCheck.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
+        cmbCheck.setForeground(new java.awt.Color(44, 128, 120));
         cmbCheck.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In", "Out" }));
 
         jLabel5.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(44, 128, 120));
         jLabel5.setText("Status");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -72,21 +78,20 @@ public class Passing extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
+                        .addGap(203, 203, 203)
+                        .addComponent(btnSubmit))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel5))
                         .addGap(26, 26, 26)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtSId, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
-                            .addComponent(cmbCheck, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(203, 203, 203)
-                        .addComponent(btnSubmit)))
-                .addContainerGap(177, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtSId)
+                                .addComponent(cmbCheck, 0, 179, Short.MAX_VALUE)))))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,13 +115,17 @@ public class Passing extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(125, 125, 125)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(151, 151, 151)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addContainerGap(150, Short.MAX_VALUE))
         );
 
         pack();
