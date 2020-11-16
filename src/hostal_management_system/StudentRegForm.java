@@ -49,6 +49,7 @@ public class StudentRegForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setForeground(new java.awt.Color(44, 128, 120));
 
         jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 20)); // NOI18N
@@ -82,6 +83,7 @@ public class StudentRegForm extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(44, 128, 120));
         jLabel5.setText("Faculty :");
 
+        btnReg.setBackground(new java.awt.Color(228, 242, 235));
         btnReg.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         btnReg.setForeground(new java.awt.Color(44, 128, 120));
         btnReg.setText("Register");
@@ -91,10 +93,12 @@ public class StudentRegForm extends javax.swing.JFrame {
             }
         });
 
+        cmbFaculty.setBackground(new java.awt.Color(228, 242, 235));
         cmbFaculty.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
         cmbFaculty.setForeground(new java.awt.Color(86, 115, 152));
         cmbFaculty.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SOC", "SOB", "SOE" }));
 
+        btnReg1.setBackground(new java.awt.Color(228, 242, 235));
         btnReg1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         btnReg1.setForeground(new java.awt.Color(44, 128, 120));
         btnReg1.setText("Close");
