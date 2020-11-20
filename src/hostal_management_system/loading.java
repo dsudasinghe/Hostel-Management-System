@@ -45,7 +45,7 @@ public class loading extends javax.swing.JFrame {
         lb1.setBackground(new java.awt.Color(153, 0, 255));
         lb1.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
         lb1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(lb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 282, 61));
+        jPanel1.add(lb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 282, 61));
 
         jLabel2.setBackground(new java.awt.Color(153, 0, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ezgif.com-resize.gif"))); // NOI18N
