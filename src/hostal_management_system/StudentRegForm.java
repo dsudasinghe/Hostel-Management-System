@@ -188,7 +188,7 @@ public class StudentRegForm extends javax.swing.JFrame {
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
             
-            String query ="INSERT INTO `student`(`id`, `name`, `tel`, `faculty`, `paidOrNot`)"+" VALUES (?,?,?,?,0)";
+            String query ="INSERT INTO `student`(`id`, `name`, `tel`, `faculty`, `paidOrNot`)"+" VALUES (?,?,?,0,0)";
             
             PreparedStatement pst = conn.prepareStatement(query); 
             pst.setInt(1,Integer.parseInt(txtSId.getText()));
