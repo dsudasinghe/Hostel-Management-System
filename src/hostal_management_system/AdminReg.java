@@ -114,7 +114,6 @@ public class AdminReg extends javax.swing.JFrame {
 
         submit.setBackground(new java.awt.Color(228, 242, 235));
         submit.setForeground(new java.awt.Color(44, 128, 120));
-        submit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/submit.png"))); // NOI18N
         submit.setText("Submit");
         submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,7 +123,6 @@ public class AdminReg extends javax.swing.JFrame {
 
         reset.setBackground(new java.awt.Color(228, 242, 235));
         reset.setForeground(new java.awt.Color(44, 128, 120));
-        reset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reset2.png"))); // NOI18N
         reset.setText("Reset");
         reset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,7 +132,6 @@ public class AdminReg extends javax.swing.JFrame {
 
         close.setBackground(new java.awt.Color(228, 242, 235));
         close.setForeground(new java.awt.Color(44, 128, 120));
-        close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         close.setText("Close");
         close.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,7 +217,7 @@ public class AdminReg extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(183, Short.MAX_VALUE)
+                .addContainerGap(188, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(174, 174, 174))
             .addGroup(jPanel2Layout.createSequentialGroup()
