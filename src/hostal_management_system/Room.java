@@ -12,120 +12,13 @@ package hostal_management_system;
 public class Room {
 
     
-    private int roomId;
-    private int floor;
-    private boolean availability;
-    private int type;
-    private int numberOfmembers;
-    private int priceOfRoom;
+    protected int roomId;
+    protected int floor;
+    protected boolean availability;
+    protected int type;
+    protected int numberOfmembers;
+    protected int roomprice;
+   
     
-    
-    
-    
-    
-    public Room(int roomId,int type,int floor,int numberOfmembers)
-    {
-        this.roomId=roomId;
-        this.type=type;
-        this.floor=floor;
-        this.numberOfmembers=numberOfmembers;
-        if(numberOfmembers==2)
-        {
-        this.availability=false;
-        }
-        else
-        {
-            this.availability=true;
-        }
-    }
-    
-    
-    
-
-    /**
-     * @return the roomId
-     */
-    public int getRoomId() {
-        return roomId;
-    }
-
-    /**
-     * @param roomId the roomId to set
-     */
-    public void setRoomId(int roomId) {
-        this.roomId = roomId;
-    }
-
-    /**
-     * @return the floor
-     */
-    public int getFloor() {
-        return floor;
-    }
-
-    /**
-     * @param floor the floor to set
-     */
-    public void setFloor(int floor) {
-        this.floor = floor;
-    }
-
-    /**
-     * @return the availability
-     */
-    public boolean isAvailability() {
-        return availability;
-    }
-
-    /**
-     * @param availability the availability to set
-     */
-    public void setAvailability(boolean availability) {
-        this.availability = availability;
-    }
-
-    /**
-     * @return the type
-     */
-    public int isType() {
-        return type;
-    }
-
-    /**
-     * @param type the type to set
-     */
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    /**
-     * @return the numberOfmembers
-     */
-    public int getNumberOfmembers() {
-        return numberOfmembers;
-    }
-
-    /**
-     * @param numberOfmembers the numberOfmembers to set
-     */
-    public void setNumberOfmembers(int numberOfmembers) {
-        this.numberOfmembers = numberOfmembers;
-    }
-    
-    
-    /**
-     * @return the priceOfRoom
-     */
-    public int getPriceOfRoom() {
-        return priceOfRoom;
-    }
-
-    /**
-     * @param priceOfRoom the priceOfRoom to set
-     */
-    public void setPriceOfRoom(int priceOfRoom) {
-        this.priceOfRoom = priceOfRoom;
-    }
-  
-    
+     
 }
