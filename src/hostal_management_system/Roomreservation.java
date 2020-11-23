@@ -91,6 +91,7 @@ public class Roomreservation extends javax.swing.JFrame {
         jTextField2.setText("jTextField2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Room Reservation");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
