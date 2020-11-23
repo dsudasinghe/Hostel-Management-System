@@ -56,6 +56,13 @@ public class Student {
     }
 
     
+    public Student(int StudentId,int payment){
+        
+        this.StudentId = StudentId;
+        this.moneyPaid=payment;
+        
+    }
+    
     
     
     
