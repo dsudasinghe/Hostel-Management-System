@@ -25,6 +25,7 @@ public class roompayments extends javax.swing.JFrame {
      */
     public roompayments() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
