@@ -244,7 +244,7 @@ public class Dashboard extends javax.swing.JFrame {
     private void btnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayActionPerformed
         // TODO add your handling code here:
         
-        Payments p = new Payments();
+        paymentsdash p = new paymentsdash();
         p.setVisible(true);
         p.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         
