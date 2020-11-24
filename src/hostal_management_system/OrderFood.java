@@ -65,6 +65,7 @@ public class OrderFood extends javax.swing.JFrame {
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Order Foods");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
