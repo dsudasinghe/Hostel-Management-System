@@ -17,6 +17,7 @@ public class Passing extends javax.swing.JFrame {
      */
     public Passing() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
