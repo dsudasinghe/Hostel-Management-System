@@ -21,6 +21,7 @@ public class loading extends javax.swing.JFrame {
      */
     public loading() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

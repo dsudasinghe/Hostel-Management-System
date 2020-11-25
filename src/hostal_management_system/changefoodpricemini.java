@@ -16,6 +16,7 @@ public class changefoodpricemini extends javax.swing.JFrame {
      */
     public changefoodpricemini() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
     
               int b,l,d,m;

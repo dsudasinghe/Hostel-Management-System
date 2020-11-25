@@ -82,6 +82,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         password_txt.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        password_txt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                password_txtActionPerformed(evt);
+            }
+        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login.png"))); // NOI18N
 
@@ -182,7 +187,7 @@ public class Login extends javax.swing.JFrame {
              
              PreparedStatement pst = conn.prepareStatement(query); 
              pst.setString(1, uname_txt.getText());
-             pst.setString(2, password_txt.getText());
+             pst.setString(2, Encrypt.Md5encryption(password_txt.getText()));
              ResultSet rs = pst.executeQuery();
              if(rs.next()){
                  
@@ -202,6 +207,10 @@ public class Login extends javax.swing.JFrame {
          }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void password_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_password_txtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_password_txtActionPerformed
 
     /**
      * @param args the command line arguments

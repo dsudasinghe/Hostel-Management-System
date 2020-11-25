@@ -106,6 +106,11 @@ public class AdminReg extends javax.swing.JFrame {
         jLabel6.setText("Password");
 
         password_txt.setForeground(new java.awt.Color(44, 128, 120));
+        password_txt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                password_txtActionPerformed(evt);
+            }
+        });
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(44, 128, 120));
@@ -278,7 +283,7 @@ public class AdminReg extends javax.swing.JFrame {
             pst.setString(2, lname_txt.getText());
             pst.setInt(3, Integer.parseInt(id_txt.getText()));
             pst.setString(4,uname_txt.getText());
-            pst.setString(5,password_txt.getText());
+            pst.setString(5,Encrypt.Md5encryption(password_txt.getText()));
             pst.setString(6,email_txt.getText());
             pst.execute();
             JOptionPane.showMessageDialog(null, "Register Succesfull");
@@ -294,6 +299,10 @@ public class AdminReg extends javax.swing.JFrame {
     private void id_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id_txtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_id_txtActionPerformed
+
+    private void password_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_password_txtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_password_txtActionPerformed
 
     /**
      * @param args the command line arguments

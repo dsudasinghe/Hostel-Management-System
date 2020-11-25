@@ -26,6 +26,7 @@ public class Roomreservation extends javax.swing.JFrame {
      */
     public Roomreservation() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     

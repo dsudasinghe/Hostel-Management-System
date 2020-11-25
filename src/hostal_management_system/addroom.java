@@ -23,6 +23,7 @@ public class addroom extends javax.swing.JFrame {
      */
     public addroom() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
