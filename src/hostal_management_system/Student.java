@@ -1,6 +1,11 @@
 package hostal_management_system;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime; 
+
+import java.sql.*;
+
+import com.sun.jdi.connect.spi.Connection;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Lahiru Dananjaya
@@ -53,6 +58,25 @@ public class Student {
         this.name = name;
         this.tel = tel;
         moneyPaid=0;
+        try {
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+            
+            String query ="INSERT INTO `student`(`id`, `name`, `tel`, `faculty`, `moneyPaid` , `paidOrNot` )"+" VALUES (?,?,?,?,?,0)";
+            
+            PreparedStatement pst = conn.prepareStatement(query); 
+            pst.setInt(1,this.StudentId);
+            pst.setString(2, this.name);
+            pst.setInt(3, this.tel);
+            pst.setString(4,this.faculty);
+            pst.setString(5,String.valueOf(this.moneyPaid));
+            pst.execute();
+        
+        }
+        catch(Exception e){
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
     }
 
     

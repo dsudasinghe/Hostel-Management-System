@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+            <file>file:/C:/Users/danan/Desktop/github/Hostel-Management-System/src/hostal_management_system/Roomreservation.java</file>
+            <file>file:/C:/Users/danan/Desktop/github/Hostel-Management-System/src/hostal_management_system/Dashboard.java</file>
+            <file>file:/C:/Users/danan/Desktop/github/Hostel-Management-System/src/hostal_management_system/Passing.java</file>
+            <file>file:/C:/Users/danan/Desktop/github/Hostel-Management-System/src/hostal_management_system/Payments.java</file>
+            <file>file:/C:/Users/danan/Desktop/github/Hostel-Management-System/src/hostal_management_system/AdminReg.java</file>
+            <file>file:/C:/Users/danan/Desktop/github/Hostel-Management-System/src/hostal_management_system/OrderFood.java</file>
+=======
             <file>file:/E:/Java%20Project/Hostel-Management-System/src/hostal_management_system/Login.java</file>
             <file>file:/E:/Java%20Project/Hostel-Management-System/src/hostal_management_system/Hostal_management_system.java</file>
             <file>file:/E:/Java%20Project/Hostel-Management-System/src/hostal_management_system/StudentRegForm.java</file>
             <file>file:/E:/Java%20Project/Hostel-Management-System/src/hostal_management_system/Order.java</file>
+>>>>>>> 6da643020b1a27c55410bd0e5c2af037eafb9af1
         </group>
     </open-files>
 </project-private>
