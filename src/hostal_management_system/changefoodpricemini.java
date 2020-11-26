@@ -46,20 +46,25 @@ public class changefoodpricemini extends javax.swing.JFrame {
 
         txtcmilk.setForeground(new java.awt.Color(44, 128, 120));
 
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(44, 128, 120));
-        jLabel2.setText("breakfast");
+        jLabel2.setText("Breakfast");
 
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(44, 128, 120));
-        jLabel3.setText("dinner");
+        jLabel3.setText("Dinner");
 
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(44, 128, 120));
-        jLabel4.setText("lunch");
+        jLabel4.setText("Lunch");
 
+        jLabel5.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(44, 128, 120));
-        jLabel5.setText("milk");
+        jLabel5.setText("Milk");
 
         jButton1.setBackground(new java.awt.Color(228, 242, 235));
-        jButton1.setText("change price");
+        jButton1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jButton1.setText("Change price");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -88,8 +93,8 @@ public class changefoodpricemini extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(94, 94, 94)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(73, 73, 73)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtcbreakfast, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtclunch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
