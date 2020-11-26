@@ -29,6 +29,11 @@ public class Roomreservation extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
+
+    JFrame f;  
+   
+    
+    
     
     
          
@@ -198,7 +203,7 @@ public class Roomreservation extends javax.swing.JFrame {
         jButton5.setBackground(new java.awt.Color(228, 242, 235));
         jButton5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(44, 128, 120));
-        jButton5.setText("Delete notworking");
+        jButton5.setText("Delete room");
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -458,6 +463,43 @@ public class Roomreservation extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+
+
+      
+    f=new JFrame();   
+    String roomnumberr=JOptionPane.showInputDialog(f,"Enter room number");      
+
+        System.out.println(roomnumberr);  
+       try {
+            
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+           
+            String query1 ="DELETE FROM reservation WHERE room_id="+roomnumberr+";";
+            String query2 ="DELETE FROM rooms WHERE room_id="+roomnumberr+";";
+ 
+                    // execute the query, and get a java result set
+                    try ( //create the java statement
+                            Statement st = conn.createStatement()) {
+                        // execute the query, and get a java result set
+                        st.execute(query1);
+                        st.execute(query2);
+                        st.close();
+                        JOptionPane.showMessageDialog(null, "room deleted");
+                    }
+                    
+                    
+                    
+                   
+           }
+       catch (SQLException e)
+           {
+           System.err.println("Got an exception! ");
+           System.err.println(e.getMessage());
+           }
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -513,4 +555,8 @@ public class Roomreservation extends javax.swing.JFrame {
     private javax.swing.JTextField txtroomnum;
     private javax.swing.JTextField txtstudnum;
     // End of variables declaration//GEN-END:variables
+
+    private void OptionPaneExample() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
