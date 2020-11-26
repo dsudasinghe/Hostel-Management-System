@@ -40,13 +40,13 @@ public class roompayments extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         txtstudntid = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,11 +70,8 @@ public class roompayments extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel1.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
-        jLabel1.setText("students who need to pay");
-
-        jButton3.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
-        jButton3.setText("refresh table");
+        jButton3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jButton3.setText("Refresh Table");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -87,7 +84,7 @@ public class roompayments extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("get payments");
+        jButton2.setText("Get payments");
         jButton2.setToolTipText("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +92,8 @@ public class roompayments extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("student id");
+        jLabel2.setForeground(new java.awt.Color(44, 128, 120));
+        jLabel2.setText("Student ID");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -110,85 +108,78 @@ public class roompayments extends javax.swing.JFrame {
             .addGap(0, 262, Short.MAX_VALUE)
         );
 
-        jButton1.setFont(new java.awt.Font("Roboto", 0, 10)); // NOI18N
-        jButton1.setText("get payments from all");
+        jButton1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jButton1.setText("Get payments from all");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(86, 115, 152));
+        jLabel3.setText("Students who need to pay");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(81, 81, 81)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtstudntid, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(169, 169, 169)
-                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(81, 81, 81)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton3)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtstudntid, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(128, 128, 128))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(135, 135, 135)
+                        .addComponent(jButton2)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(137, 137, 137)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(84, 84, 84)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtstudntid, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(41, 41, 41)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(84, 84, 84)))
-                .addGap(19, 19, 19))
+                        .addGap(0, 137, Short.MAX_VALUE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtstudntid, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(47, 47, 47)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(261, 261, 261))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 834, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -200,318 +191,165 @@ public class roompayments extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-
-
-
-        
         int a,b,c,d;
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-         try {
-            
+
+        try {
+
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
-          
+
             try ( //first we change paidOrNot to 0 ,cause this is a new month and we need to get payments from all
-                    Statement st = conn.createStatement()) {
+                Statement st = conn.createStatement()) {
                 String query2 ="update student set paidOrNot =0 ";
-                
+
                 st.execute(query2);
-                
-                
+
                 //now we are gonna get payements from all the guys who have money in thair accounts
-                
-                
+
                 String querygetid ="SELECT student_id FROM reservation ;";
-                
-                
+
                 //create the java statement
-                
+
                 // execute the query, and get a java result set
                 ResultSet rs2 = st.executeQuery(querygetid);
-                
+
                 while (rs2.next())
                 {
                     int idOfstudent= rs2.getInt("student_id");//this will give us all the students id's to us
                     System.out.println(idOfstudent);
                     //now we are going to get their room type
-                    
-                    
-                    
+
                     //********room type
-                    
+
                     getpay x = new getpay();
                     int y=x.getroomtype(idOfstudent);
-                    
+
                     System.out.println(y);//now we know their id and room type  so lets get mmmm price for room id
-                    
-                    
-                    
-                    
+
                     //********payment for the room
                     int roompricee = x.getroomprice(y, 8000, 15000);
-                    
-                    
-                    
-                    
+
                     System.out.println(roompricee);//now we know how much he need to pay for the room
                     // now we need his balace to check he can pay or not
-                    
-                    
-                    
-                    
+
                     int studentacbal=x.getbalanceofaccount(idOfstudent);
                     System.out.println(studentacbal);
                     // now we are going to get payments from all who have money to do it so i am gonna call getpaymentsfromall method
-                    
-                    
-                    
-                    
-                    
+
                     if(studentacbal>roompricee){
-                    
-                    
-                     x.getpaymentsfromall(roompricee,studentacbal,idOfstudent);
-                    
-                    
-                    
+
+                        x.getpaymentsfromall(roompricee,studentacbal,idOfstudent);
+
                     }
-                    
-                    
-                    
-                    
-                    
-                    
-                   
-                    
-                    
-                    
-                    
-                    
-                    
+
                     //
-                    
-                    
-                    
+
                 }}
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-           
+
             }
-           catch (SQLException e)
-          {
-             System.err.println("Got an exception! ");
-             System.err.println(e.getMessage());
-          }
-        
-      
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-     
+            catch (SQLException e)
+            {
+                System.err.println("Got an exception! ");
+                System.err.println(e.getMessage());
+            }
 
-
-
-
-
-        // TODO add your handling code here:
+            // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
-        
-            
- 
-  // dispose(); //Destroy the JFrame object     
-        
-        
-          
-        
-        
-        
-        try {
-            
-            String myUrl = "jdbc:mysql://localhost/hostel";
-            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
-            
-            String query ="SELECT * FROM student where paidOrNot=0;"; 
-            
-            
-            //create the java statement
-            Statement st = conn.createStatement();
-            // execute the query, and get a java result set
-            ResultSet rs = st.executeQuery(query);
-      
-       while (rs.next())
-      {
-           int p= rs.getInt("id");
-           String q=rs.getString("name");
-         
-           
-           
-           
-           
-           String id=Integer.toString(p);
-           String name=q;
-          
-       
-           
-  
-            String tbData[]={id,name};
-           
-            DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
-            
-            tblModel.fireTableDataChanged();
-            tblModel.addRow(tbData);
-          
-   
-      }
-      st.close();
-    }
-       catch (Exception e)
-        {
-           System.err.println("Got an exception! ");
-           System.err.println(e.getMessage());
-       }
-    
 
-        
+        int studentid=Integer.parseInt(txtstudntid.getText());
 
-    
-        
-        
-        
-        
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
+        getpay m = new getpay();
+
+        int check=m.checkpaidOrnot(studentid);
+
+        if(check==0){
+            //********room type
+
+            int y=m.getroomtype(studentid);
+
+            System.out.println(y);//now we know their id and room type  so lets get mmmm price for room id
+
+            //********payment for the room
+            int roompricee = m.getroomprice(y, 8000, 15000);
+
+            System.out.println(roompricee);//now we know how much he need to pay for the room
+            // now we need his balace to check he can pay or not
+
+            int studentacbal=m.getbalanceofaccount(studentid);
+            System.out.println(studentacbal);
+            // now we are going to get payments from all who have money to do it so i am gonna call getpaymentsfromall method
+
+            if(studentacbal>roompricee){
+
+                m.getpaymentsfromall(roompricee,studentacbal,studentid);
+
+            }
+
+            else {
+
+                JOptionPane.showMessageDialog(null, "need to pay");
+
+            }
+
+        }
+
+        else {
+
+            JOptionPane.showMessageDialog(null, "already paid");
+
+        }
+
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void txtstudntidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtstudntidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtstudntidActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        
-        
-        
-        
-        int studentid=Integer.parseInt(txtstudntid.getText());
-        
-        getpay m = new getpay();
-          
-        int check=m.checkpaidOrnot(studentid);
-        
-        
-        if(check==0){
-         //********room type
-                    
-                    
-                    int y=m.getroomtype(studentid);
-                    
-                    System.out.println(y);//now we know their id and room type  so lets get mmmm price for room id
-                    
-                    //********payment for the room
-                    int roompricee = m.getroomprice(y, 8000, 15000);
-                    
-                    System.out.println(roompricee);//now we know how much he need to pay for the room
-                    // now we need his balace to check he can pay or not
-                    
-                    
-                    int studentacbal=m.getbalanceofaccount(studentid);
-                    System.out.println(studentacbal);
-                    // now we are going to get payments from all who have money to do it so i am gonna call getpaymentsfromall method
-                    
-                    
-        
-                    if(studentacbal>roompricee){
-                    
-                    
-                      m.getpaymentsfromall(roompricee,studentacbal,studentid);
-                    
-                    
-                    }
-                    
-                    else {
-                    
-                    
-                    JOptionPane.showMessageDialog(null, "need to pay");
-                    
-                    
-                    }
-                    
-        
+
+        // dispose(); //Destroy the JFrame object
+
+        try {
+
+            String myUrl = "jdbc:mysql://localhost/hostel";
+            java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
+
+            String query ="SELECT * FROM student where paidOrNot=0;";
+
+            //create the java statement
+            Statement st = conn.createStatement();
+            // execute the query, and get a java result set
+            ResultSet rs = st.executeQuery(query);
+
+            while (rs.next())
+            {
+                int p= rs.getInt("id");
+                String q=rs.getString("name");
+
+                String id=Integer.toString(p);
+                String name=q;
+
+                String tbData[]={id,name};
+
+                DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
+
+                tblModel.fireTableDataChanged();
+                tblModel.addRow(tbData);
+
+            }
+            st.close();
         }
-        
-         else {
-                    
-                    
-                    JOptionPane.showMessageDialog(null, "already paid");
-                    
-                    
-                    }
-                    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
+        catch (Exception e)
+        {
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
+
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -552,8 +390,8 @@ public class roompayments extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
