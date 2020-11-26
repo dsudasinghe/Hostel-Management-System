@@ -212,6 +212,7 @@ public class StudentRegForm extends javax.swing.JFrame {
         
        
         Student s = new Student(id , name , tel , fac);
+        
         JOptionPane.showMessageDialog(null, "Register Succesfull");
         txtSName.setText("");
         txtSId.setText("");
