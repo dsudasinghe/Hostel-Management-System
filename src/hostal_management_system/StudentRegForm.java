@@ -185,7 +185,7 @@ public class StudentRegForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
-        try {
+       /* try {
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
             
@@ -206,7 +206,16 @@ public class StudentRegForm extends javax.swing.JFrame {
         catch(Exception e){
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
-        }
+        }*/
+        int id = Integer.parseInt(txtSId.getText()) , tel =Integer.parseInt(txtSTel.getText());
+        String name=txtSName.getText() , fac = cmbFaculty.getSelectedItem().toString();
+        
+       
+        Student s = new Student(id , name , tel , fac);
+        JOptionPane.showMessageDialog(null, "Register Succesfull");
+        txtSName.setText("");
+        txtSId.setText("");
+        txtSTel.setText("");
         
     }//GEN-LAST:event_btnRegActionPerformed
 
