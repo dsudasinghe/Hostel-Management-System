@@ -302,11 +302,26 @@ public class Roomreservation extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
+     
+        Roomreservation rm = new Roomreservation();
+        this.dispose();
+        rm. showtable();
+        rm.setVisible(true);
+        rm.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+       
         
-        
-        
-        
-        
+         
+              
+       
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    
+    
+     
+    private void showtable(){
+    
+    
+           
         
         try {
             
@@ -343,7 +358,8 @@ public class Roomreservation extends javax.swing.JFrame {
             String tbData[]={room_number,floor,type,availability};
             
             DefaultTableModel tblModel=(DefaultTableModel)jTable1.getModel();
-
+           
+            
             tblModel.addRow(tbData);
           
    
@@ -365,11 +381,19 @@ public class Roomreservation extends javax.swing.JFrame {
     
 
 
-
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
+        
+        
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
        

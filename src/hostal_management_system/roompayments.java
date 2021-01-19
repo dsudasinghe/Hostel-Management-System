@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -313,7 +314,22 @@ public class roompayments extends javax.swing.JFrame {
 
         // dispose(); //Destroy the JFrame object
 
-        try {
+        roompayments rm = new roompayments();
+        this.dispose();
+        rm. showtable1();
+        rm.setVisible(true);
+        rm.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+    
+    
+   
+     
+    private void showtable1(){
+     
+
+     try {
 
             String myUrl = "jdbc:mysql://localhost/hostel";
             java.sql.Connection conn = DriverManager.getConnection(myUrl, "root", "");
@@ -348,9 +364,21 @@ public class roompayments extends javax.swing.JFrame {
             System.err.println("Got an exception! ");
             System.err.println(e.getMessage());
         }
-
-    }//GEN-LAST:event_jButton3ActionPerformed
-
+ 
+     
+     
+    
+     
+     
+     
+     }
+    
+    
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
